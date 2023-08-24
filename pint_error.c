@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- *p_failure - Error for pint
+ *pint_failure - Error for pint
  *@stack: Pointer for stack
  *@line_number: line for error found
  *
