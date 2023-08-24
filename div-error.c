@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * div_error - Handled div errors
+ * div_failure - Handled div errors
  * @stack: Pointer to node
  * @line_number: Error occuring here
  *

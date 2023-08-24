@@ -30,5 +30,5 @@ void (*op_func(char *s))(stack_t **, unsigned int)
 			return (instructions[index].f);
 		index++;
 	}
-	return (opcode_error);
+	return (opcode_failure);
 }

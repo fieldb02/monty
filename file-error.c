@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- * file_error - Error when file is not opened
+ * file_failure - Error when file is not opened
  * Return: void
  */
-void file_error(void)
+void file_failure(void)
 {
 	fprintf(stderr, "Error: Unable to open
 			file %s \n", stack_type.file);

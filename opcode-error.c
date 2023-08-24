@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- *opcode_error - Invalid error
+ *opcode_failure - Invalid error
  *@stack: Pointer to node
  *@line_number: Error found
  */
-void opcode_error(stack_t **stack, unsigned int line_number)
+void opcode_failure(stack_t **stack, unsigned int line_number)
 {
 	fprintf(stderr, "L%d: unknown instruction %s\n",
 		line_number, stack_type.opcode);
