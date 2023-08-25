@@ -74,4 +74,7 @@ void push_failure(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t **stack);
 void swap_failure(stack_t **stack, unsigned int line_number);
 void zero_failure(stack_t **stack, unsigned int line_number);
+void opcode_pall(stack_t **stack, unsigned int line_number);
+void opcode_push(stack_t **head, unsigned int line_number);
+void push_value(stack_t **head, int value);
 #endif
