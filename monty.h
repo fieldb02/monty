@@ -19,9 +19,9 @@
  */
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
 
 /**
@@ -34,16 +34,16 @@ typedef struct stack_s
  */
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
-} instruction_t; 
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int line_number);
+} instruction_t;
 
 /**
- * struct stack_val - variable
+ * struct stack_type - variable
  * @n: value of node
  * @file: File to be read
  * @opcode: Tkn parsed
- * @qu: Mode switching (FIFO) - 0 for off, 1 for on
+ * @queue: Mode switching (FIFO) - 0 for off, 1 for on
  * Description: Errror handling file
  */
 struct stack_type
@@ -52,7 +52,7 @@ struct stack_type
 	char *file;
 	char *opcode;
 	int queue;
-} stack_val;
+} stack_type;
 
 
 #endif
