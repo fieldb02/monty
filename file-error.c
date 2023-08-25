@@ -6,7 +6,7 @@
  */
 void file_failure(void)
 {
-	fprintf(stderr, "Error: Unable to open
+	fprintf(stderr, "Error: Can't open
 			file %s \n", stack_type.file);
 	exit(EXIT_FAILURE);
 }

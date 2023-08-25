@@ -56,4 +56,22 @@ struct stack_type
 	char *opcode;
 	int queue;
 } stack_val;
+
+void add_failure(stack_t **stack, unsigned int line_number);
+void div_failure(stack_t **stack, unsigned int line_number);
+void file_failure(void);
+void input_failure(void);
+void parse_bytecode_file(FILE *file_ptr);
+int main(int argc, char **argv);
+void malloc_failure(stack_t **stack);
+void mod_failure(stack_t **stack, unsigned int line_number);
+void mul_failure(stack_t **stack, unsigned int line_number);
+void (*op_func(char *s))(stack_t **, unsigned int);
+void opcode_failure(stack_t **stack, unsigned int line_number);
+void pint_failure(stack_t **stack, unsigned int line_number);
+void pop_failure(stack_t **stack, unsigned int line_number);
+void push_failure(stack_t **stack, unsigned int line_number);
+void free_stack(stack_t **stack);
+void swap_failure(stack_t **stack, unsigned int line_number);
+void zero_failure(stack_t **stack, unsigned int line_number);
 #endif
